@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: 'kl_new/index.html'
+          path: 'kl_new'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
