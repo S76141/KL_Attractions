@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact KL Attractions for travel information, recommendations, and inquiries about Kuala Lumpur">
+  <title>Contact Us - KL Attractions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header with Sticky Navigation -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">KL Attractions</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="attractions.html">Top Attractions</a></li>
+          <li><a href="food.html">Foods & Cultures</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="hero hero-min">
+    <div class="hero-content">
+      <h1>Get in Touch</h1>
+      <p>Have questions about Kuala Lumpur? We're here to help with travel information and recommendations</p>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="container">
+    <h2>Contact Us</h2>
+    <p class="text-center-margin">
+      Fill out the form below and we'll get back to you with the information you need
+    </p>
+
+    <div class="form-container">
+      <form id="contactForm" onsubmit="handleFormSubmit(event)" method="POST" action="https://formspree.io/f/mrebnkor" >
+        <!-- Name Input (Text) -->
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            placeholder="Enter your full name" 
+            required
+          >
+        </div>
+
+        <!-- Email Input -->
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="your.email@example.com" 
+            required
+          >
+        </div>
+
+        <!-- Topic Select Dropdown -->
+        <div class="form-group">
+          <label for="topic">Topic *</label>
+          <select id="topic" name="topic" required>
+            <option value="">-- Select a Topic --</option>
+            <option value="general">General Inquiry</option>
+            <option value="booking">Tour Booking</option>
+            <option value="complaint">Complaint</option>
+          </select>
+        </div>
+
+        <!-- Message Textarea -->
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea 
+            id="message" 
+            name="message" 
+            placeholder="Tell us more about your inquiry..." 
+            rows="6"
+            required
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+          <button type="submit" class="btn btn-full-width">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Additional Contact Information -->
+  <section class="container">
+    <h2>Other Ways to Reach Us</h2>
+    
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-content card-padding-large">
+          <h3 class="card-icon-header">📧</h3>
+          <h3>Email</h3>
+          <p><a href="mailto:info@klattractions.com" class="card-link">info@klattractions.com</a></p>
+          <p class="card-small-text">We typically respond within 24 hours</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content card-padding-large">
+          <h3 class="card-icon-header">📱</h3>
+          <h3>Phone</h3>
+          <p class="card-link">+6012-3345890</p>
+          <p class="card-small-text">Monday - Friday: 9 AM - 6 PM (MYT)</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content card-padding-large">
+          <h3 class="card-icon-header">💬</h3>
+          <h3>Social Media</h3>
+          <p class="card-link"></p>Instagram @KLAttractions</p>
+          <p class="card-small-text">Follow us for daily tips and updates</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="container">
+    <h2>Frequently Asked Questions</h2>
+    
+    <div class="faq-container">
+      <div class="card card-margin-bottom">
+        <div class="card-content">
+          <h3>What information can you provide about KL attractions?</h3>
+          <p class="card-no-margin">We offer comprehensive information about top attractions, opening hours, ticket prices, transportation options, and insider tips to help you make the most of your visit to Kuala Lumpur. Simply ask and we'll provide the details you need.</p>
+        </div>
+      </div>
+
+      <div class="card card-margin-bottom">
+        <div class="card-content">
+          <h3>How quickly will I receive a response?</h3>
+          <p class="card-no-margin">We aim to respond to all inquiries within 24 hours during business days (Monday-Friday). For urgent questions about current events or time-sensitive travel plans, please mention this in your message.</p>
+        </div>
+      </div>
+
+      <div class="card card-margin-bottom">
+        <div class="card-content">
+          <h3>Do you provide real-time information?</h3>
+          <p class="card-no-margin">While we strive to keep our website updated with the latest information, we recommend confirming opening hours, ticket prices, and special events directly with attractions before your visit, as these can change.</p>
+        </div>
+      </div>
+
+      <div class="card card-margin-bottom">
+        <div class="card-content">
+          <h3>Is this service free?</h3>
+          <p class="card-no-margin">Yes, all our information services and travel advice are completely free. We're passionate about helping visitors discover the best of Kuala Lumpur and make their trip unforgettable.</p>
+        </div>
+      </div>
+
+      <div class="card card-margin-bottom">
+        <div class="card-content">
+          <h3>Can you recommend hotels or accommodations?</h3>
+          <p class="card-no-margin">While we focus primarily on attractions and activities, we're happy to provide general recommendations for areas to stay based on your budget and what you want to be close to. Let us know your preferences in your inquiry.</p>
+        </div>
+      </div>
+
+      <div class="card card-margin-bottom">
+        <div class="card-content">
+          <h3>What if I have a complaint or feedback?</h3>
+          <p class="card-no-margin">We welcome all feedback! Select "Complaint" from the topic dropdown and describe your concern. We take all feedback seriously and use it to improve our information and services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Email Link -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 KL Attractions. All rights reserved.</p>
+      <p>Have questions? Email us at <a href="mailto:info@klattractions.com">info@klattractions.com</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
